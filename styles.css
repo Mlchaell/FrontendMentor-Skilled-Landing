@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+:root {
+  --light-blue: #666CA3;
+  --dark-blue: #13183F;
+  --gray: #83869A;
+  --hot-pink: #F74780;
+  --light-pink: #FFA7C3;
+
+  /* Orange-Pink Gradient F02AA6 - FF6F48 */
+  /* Blue-Pink Graidnet 4851FF - F02AA6 */
+
+  --fw-extra-bold: 800;
+  --fw-bold: 700;
+  --fw-medium: 500;
+}
+
+/* CSS Reset: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,h1,h2,h3,h4,p,figure,blockquote,dl,dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,button,textarea,select {
+  font: inherit;
+}
+
+
+/* 
+================
+====MAIN CSS====
+================
+*/
+
+
+
+/*
+================
+=HELPER CLASSES=
+================
+*/
+
+.h-xl {
+  font-size: 3.5rem;
+  font-weight: var(--fw-extra-bold);
+  line-height: 4.375rem;
+}
+
+.h-l {
+  font-size: 2.5rem;
+  font-weight: var(--fw-extra-bold);
+  line-height: 3.1875rem;
+}
+
+.h-m {
+  font-size: 2rem;
+  font-weight: var(--fw-extra-bold);
+  line-height: 2.5rem;
+}
+
+.h-s {
+  font-size: 1.5rem;
+  font-weight: var(--fw-extra-bold);
+  line-height: 1.75rem;
+}
+
+.b-m {
+  font-size: 1.125rem;
+  font-weight: var(--fw-medium);
+  line-height: 1.75rem;
+}
+
+.b-s {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.75rem;
+}
+
+/*
+===============
+=MEDIA QUERIES=
+===============
+*/
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
